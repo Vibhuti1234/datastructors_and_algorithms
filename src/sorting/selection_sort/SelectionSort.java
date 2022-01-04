@@ -1,9 +1,9 @@
-package sorting.bubble_sort;
+package sorting.selection_sort;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort {
+public class SelectionSort {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Provide the size of the array: ");
@@ -17,12 +17,12 @@ public class InsertionSort {
 
 		}
 		in.close();
-		int sortedArr[] = insertionSort(arr);
+		int sortedArr[] = selectionSort(arr);
 		System.out.println(Arrays.toString(sortedArr));
 
 	}
 
-	private static int[] insertionSort(int[] arr) {
+	private static int[] selectionSort(int[] arr) {
 		int temp;
 		for (int i = 0; i <= arr.length - 2; i++) {
 			int minIndex = i;
